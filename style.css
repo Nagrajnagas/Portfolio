@@ -142,6 +142,13 @@ body {
     display: flex;
     gap: 15px;
     justify-content: center;
+    align-items: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.hero-buttons .btn {
+    white-space: nowrap;
 }
 
 .btn {
@@ -350,6 +357,11 @@ footer {
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 768px) {
+
+    .hero-buttons {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
     .navbar {
         flex-direction: column;
         gap: 15px;
